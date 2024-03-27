@@ -6,7 +6,7 @@ asdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjkl
 asdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjklasdfghjkl
 asdfghjklasdfghjklasdfghjklasdfghjkl
 
-## h2
+## Heading2
 
 asdfghjklasdfghjklasdfghjklasdfghjklasdfghjkl
 asdfghjklasdfghjklasdfghjkl
