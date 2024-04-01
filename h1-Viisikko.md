@@ -17,7 +17,7 @@ Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittam
   $ sudo apt-get -y install salt-minion
 
 ### Create a Web Page Using GitHub
-- Luo uusi Repositorio (muista README.md tiedosto). Suositeltu lisenssi: GNU General Public License version 3).
+- Luo uusi Repositorio (muista README.md tiedosto). Suositeltu lisenssi: GNU General Public License version 3.
 - Kirjoita markdownilla. nimeä tiedosto *nimi.md*
 - `commit changes` = Tallenna
 
