@@ -7,17 +7,18 @@ Create a Web Page Using Github: https://terokarvinen.com/2023/create-a-web-page-
 
 Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
 
-### Salt komentojen ajaminen paikallisesti
+### Run Salt Command Locally
 - Salt komentojen ajaminen paikallisesti on hyödyllistä harjoittelussa ja testaamisessa
 - Tärkeimmät state funktiot ovat: pkg, file, service, user, cmd
 - Saltin asentaminen Debian ja Ubuntu:
 
-*$ sudo apt-get update*
+  $ sudo apt-get update
 
-*$ sudo apt-get -y install salt-minion*
+  $ sudo apt-get -y install salt-minion
 
 ### Create a Web Page Using GitHub
-- Luo uusi Repositorio (muista README.md tiedosto). Suositeltu lisenssi: GNU General Public License version 3
+- Luo uusi Repositorio (muista README.md tiedosto). Suositeltu lisenssi: GNU General Public License version 3).
+- 
 - 
 
 
