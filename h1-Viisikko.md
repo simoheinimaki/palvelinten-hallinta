@@ -1,9 +1,23 @@
 # H1
 
 ## Tiivistelmät
+Run Salt Command Locally: https://terokarvinen.com/2021/salt-run-command-locally/
+
+Create a Web Page Using Github: https://terokarvinen.com/2023/create-a-web-page-using-github/
+
+Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
 
 ### Salt komentojen ajaminen paikallisesti
 - Salt komentojen ajaminen paikallisesti on hyödyllistä harjoittelussa ja testaamisessa
 - Tärkeimmät state funktiot ovat: pkg, file, service, user, cmd
-- Saltin asentaminen Debian ja Ubuntu:    $ sudo apt-get update
-$ sudo apt-get -y install salt-minion
+- Saltin asentaminen Debian ja Ubuntu:
+
+*$ sudo apt-get update*
+
+*$ sudo apt-get -y install salt-minion*
+
+### Create a Web Page Using GitHub
+- Luo uusi Repositorio (muista README.md tiedosto). Suositeltu lisenssi: GNU General Public License version 3
+- 
+
+
