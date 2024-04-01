@@ -18,7 +18,7 @@ Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittam
 
 ### Create a Web Page Using GitHub
 - Luo uusi Repositorio (muista README.md tiedosto). Suositeltu lisenssi: GNU General Public License version 3).
-- 
-- 
+- Kirjoita markdownilla. nimeä tiedosto *nimi.md*
+- `commit changes` = Tallenna
 
 
