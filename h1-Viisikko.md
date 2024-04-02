@@ -150,7 +150,7 @@ Tämän jälkeen ajoin komennon:
 
 ## Lähteet
 
-Karvinen, Tero Infra as code 2024: https://terokarvinen.com/2024/configuration-management-2024-spring/#h0-hello
+Karvinen, Tero 2024: Infra as code: https://terokarvinen.com/2024/configuration-management-2024-spring/#h0-hello
 
 Karvinen, Tero 2021: Run Salt Command Locally: https://terokarvinen.com/2021/salt-run-command-locally/
 
