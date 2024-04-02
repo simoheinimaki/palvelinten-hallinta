@@ -30,6 +30,7 @@ Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittam
 - Muista lähdeviittaukset
 
 ## Salt
+Salt-minion asennettu
 
 
 
