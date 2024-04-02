@@ -12,9 +12,9 @@ Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittam
 - Tärkeimmät state funktiot ovat: pkg, file, service, user, cmd
 - Saltin asentaminen Debian ja Ubuntu:
 
-  $ sudo apt-get update
+      $ sudo apt-get update
 
-  $ sudo apt-get -y install salt-minion
+      $ sudo apt-get -y install salt-minion
 
 ### Create a Web Page Using GitHub
 - Luo uusi Repositorio (muista README.md tiedosto). Suositeltu lisenssi: GNU General Public License version 3.
@@ -39,23 +39,30 @@ Vagrant on asennettuna
 ![Kuva2](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/5abe560c-d559-4475-83ae-47b5afa169cf)
 
 ### Uuden Linux virtuaalikoneen luominen vagrantilla
-Uuden virtuaalikoneeen voi luoda syöttämällä komennon:  $ vagrant init debian/bullseye64
+Uuden virtuaalikoneeen voi luoda syöttämällä komennon:  
 
-Virtuaalikone käynnistetään komennolla:  $ vagrant init debian/bullseye64
+    $ vagrant init debian/bullseye64
+
+Virtuaalikone käynnistetään komennolla:  
+
+    $ vagrant init debian/bullseye64
 
 ![Kuva3](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/d88c7182-8263-4e48-b3ce-7bffea380db6)
 
 ### Saltin asennus virtuaalikoneelle
 
-otetaan ensin ssh yhteys:  vagrant ssh
+otetaan ensin ssh yhteys:  
+
+    vagrant ssh
 
 Sen jälkeen voidaan asentaa salt :  
-  sudo apt update  
+  
+    sudo apt update  
   
   ![Kuva4](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/b88d5546-3401-40c3-a9b8-27a9a6caa1d2)
 
   
-  sudo apt install salt-master salt-minion
+    sudo apt install salt-master salt-minion
 
   ![Kuva5](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/2bbf9a10-b685-4a58-976c-dbd8c1a9bf36)
 
@@ -72,7 +79,9 @@ komennon ajettuani huomasin sen epäonnistuneen. Asensin Tree työkalun, jonka j
 ![Kuva7](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/e11e8e0d-051c-4a12-99c7-cfdf9a7866a1)
 
 #### file
-Ajoin komennon:  sudo salt-call --local -l info state.single file.managed /tmp/testi 
+Ajoin komennon:  
+
+    sudo salt-call --local -l info state.single file.managed /tmp/testi 
 
 ![Kuva9](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/57f6a91b-4593-4e21-874f-0be7e402ec94)
 
@@ -80,14 +89,18 @@ Komennolla loin uuden tiedoston /tmp/testi.
 
 #### service
 
-Ajoin komennon:  sudo salt-call --local -l info state.single service.running apache2 enable=True
+Ajoin komennon:  
+
+    sudo salt-call --local -l info state.single service.running apache2 enable=True
 ![Kuva10](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/26ee3910-c374-4348-aed6-2bcebe7d1a5a)
 
 Tämä epäonnistui, koska Apache2 ei ole valmiiksi asennettuna virtuaalikoneelle.
 
 #### user
 
-Ajoin komennon:  sudo salt-call --local -l info state.single user.present simo
+Ajoin komennon:  
+
+    sudo salt-call --local -l info state.single user.present simo
 
 Tällä komennolla loin uuden käyttäjän
 
@@ -97,7 +110,7 @@ Tällä komennolla loin uuden käyttäjän
 
 Ajoin komennon:   
 
-  sudo salt-call --local -l info state.single cmd.run 'touch /home/vagrant/testi2.txt' 
+    sudo salt-call --local -l info state.single cmd.run 'touch /home/vagrant/testi2.txt' 
 
 Tavoitteena luoda tiedosto nimeltä "testi2" vagrant hakemistoon.
 
@@ -111,7 +124,7 @@ Tiedoston luominen komennolla onnistui.
 
 Yritän luoda uudestaan testi2 tiedoston vagrant hakemistoon komennolla:  
 
-  sudo salt-call --local -l info state.single file.managed /home/vagrant/testi2.txt
+    sudo salt-call --local -l info state.single file.managed /home/vagrant/testi2.txt
 
   ![Kuva14](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/849ec378-6558-4d25-b848-57882c529150)
 
@@ -121,7 +134,7 @@ Tuloksesta huomaa, että mitään muutoksia ei tehty, sillä tiedosto oli jo ole
 
 Ajoin komennnon:
 
-  sudo salt-call --local grains.items
+    sudo salt-call --local grains.items
 
 Komento tulosti näytölle tietoa virtuaalitietokoneesta. 
 
@@ -131,17 +144,18 @@ Komento tulosti näytölle tietoa virtuaalitietokoneesta.
 
 Tämän jälkeen ajoin komennon:
  
-  sudo salt-call --local grains.item osfinger virtual
+    sudo salt-call --local grains.item osfinger virtual
 
 ![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/aed54eb2-ed4a-4534-b99c-9b7533fe2652)
 
 ## Lähteet
-Tehtäväsivu: https://terokarvinen.com/2024/configuration-management-2024-spring/#h0-hello
 
-Run Salt Command Locally: https://terokarvinen.com/2021/salt-run-command-locally/
+Karvinen, Tero Infra as code 2024: https://terokarvinen.com/2024/configuration-management-2024-spring/#h0-hello
 
-Create a Web Page Using Github: https://terokarvinen.com/2023/create-a-web-page-using-github/
+Karvinen, Tero 2021: Run Salt Command Locally: https://terokarvinen.com/2021/salt-run-command-locally/
 
-Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
+Karvinen, Tero 2023: Create a Web Page Using Github: https://terokarvinen.com/2023/create-a-web-page-using-github/
+
+Karvinen, Tero 2006: Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
 
 
