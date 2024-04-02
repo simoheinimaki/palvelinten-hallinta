@@ -33,4 +33,6 @@ Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittam
 Salt-minion asennettu
 
 
+![Kuva1](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/2e8f31e4-6976-423d-a08d-9103c56e3a6d)
+
 
