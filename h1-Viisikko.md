@@ -78,24 +78,26 @@ Ajoin komennon:  sudo salt-call --local -l info state.single file.managed /tmp/t
 
 Komennolla loin uuden tiedoston /tmp/testi.
 
-### service
+#### service
 
 Ajoin komennon:  sudo salt-call --local -l info state.single service.running apache2 enable=True
 ![Kuva10](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/26ee3910-c374-4348-aed6-2bcebe7d1a5a)
 
 Tämä epäonnistui, koska Apache2 ei ole valmiiksi asennettuna virtuaalikoneelle.
 
-### user
+#### user
 
 Ajoin komennon:  sudo salt-call --local -l info state.single user.present simo
 
-Tällä komennolla loin uuden käyttäjän ja uuden groupin.
+Tällä komennolla loin uuden käyttäjän
 
 ![Kuva11](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/02cd3a99-bf5b-403f-a311-21d68a0ce31c)
 
-### cmd
+#### cmd
 
-Ajoin komennon:   sudo salt-call --local -l info state.single cmd.run 'touch /home/vagrant/testi2.txt' 
+Ajoin komennon:   
+
+  sudo salt-call --local -l info state.single cmd.run 'touch /home/vagrant/testi2.txt' 
 
 Tavoitteena luoda tiedosto nimeltä "testi2" vagrant hakemistoon.
 
@@ -105,7 +107,15 @@ Tiedoston luominen komennolla onnistui.
 
 ![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/0b52ccfb-e8f7-4806-a72f-bd79c14c4e80)
 
+### Idempotentti
 
+Yritän luoda uudestaan testi2 tiedoston vagrant hakemistoon komennolla:  
+
+  sudo salt-call --local -l info state.single file.managed /home/vagrant/testi2.txt
+
+  ![Kuva14](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/849ec378-6558-4d25-b848-57882c529150)
+
+Tuloksesta huomaa, että mitään muutoksia ei tehty, sillä tiedosto oli jo olemassa. Komento oli täten idempotentti.
 
 
 
