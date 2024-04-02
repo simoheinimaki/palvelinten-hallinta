@@ -21,4 +21,15 @@ Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittam
 - Kirjoita markdownilla. nimeä tiedosto *nimi.md*
 - `commit changes` = Tallenna
 
+### Raportin kirjoittaminen
+- Kirjoita raporttia samalla kuin teet työtä.
+- Kerro työskentely-ympäristö.
+- Tuloksen on oltava toistettavissa.
+- Kirjoita täsmällisesti mitä teet.
+- Tee raportista helppolukuinen
+- Muista lähdeviittaukset
+
+## Salt
+
+
 
