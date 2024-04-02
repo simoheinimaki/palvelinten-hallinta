@@ -117,8 +117,23 @@ Yritän luoda uudestaan testi2 tiedoston vagrant hakemistoon komennolla:
 
 Tuloksesta huomaa, että mitään muutoksia ei tehty, sillä tiedosto oli jo olemassa. Komento oli täten idempotentti.
 
+### Tietoa koneesta
 
+Ajoin komennnon:
 
+  sudo salt-call --local grains.items
+
+Komento tulosti näytölle tietoa virtuaalitietokoneesta. 
+
+![Kuva15](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/51531de3-1365-4964-9048-e2caff4b770e)
+
+![Kuva16](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/d48a638c-5bca-4cd7-ab45-343996ef0766)
+
+Tämän jälkeen ajoin komennon:
+ 
+  sudo salt-call --local grains.item osfinger virtual
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/aed54eb2-ed4a-4534-b99c-9b7533fe2652)
 
 ## Lähteet
 Tehtäväsivu: https://terokarvinen.com/2024/configuration-management-2024-spring/#h0-hello
