@@ -29,10 +29,10 @@ Raportin kirjoittaminen: https://terokarvinen.com/2006/06/04/raportin-kirjoittam
 - Tee raportista helppolukuinen
 - Muista lähdeviittaukset
 
-## Salt
-Salt-minion asennettu
-
-
+## Tehtävät:
+Salt-minion on asennettuna
 ![Kuva1](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/2e8f31e4-6976-423d-a08d-9103c56e3a6d)
+Vagrant on asennettuna
+![Kuva2](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/5abe560c-d559-4475-83ae-47b5afa169cf)
 
 
