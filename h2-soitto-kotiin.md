@@ -9,7 +9,7 @@ Karvinen 2018: Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux: 
 Karvinen 2014: Hello Salt Infra-as-Code: https://terokarvinen.com/2024/hello-salt-infra-as-code/
 
 ## Tehtävät
-Suoritan tehtävät ubuntu server virtuaalikoneella.
+Suoritan tehtävät tietokonellani Ubuntu serverissä.
 ### Vagrant asennus
 Ensimmäisenä asennan vagrantin ja virtualboxin
 
@@ -33,11 +33,7 @@ Käynnistäessä virtuaalikonetta t001 sain odotetun IP error viestin.
 
 Korjaan tämän ongelman vaihtamalla virtuaalikoneiden ip osoitteet oikean osoiteavaruuden sisälle.
 
-Yritin uudestaan ja sain uuden error viestin.
 
-![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/b2f03b4a-c1af-4510-8259-f429b4beaac7)
-
-Googlauksen perusteella vaikuttaa, että viesti johtuu virtualisoinnin sallimisesta BIOS:ssa. Koska työskentelen virtuaalikoneella, minun on muutettava prosessoriasetuksia virtualboxissa.
 
 
 
