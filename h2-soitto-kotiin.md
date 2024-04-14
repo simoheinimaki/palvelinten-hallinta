@@ -10,28 +10,42 @@ Karvinen 2014: Hello Salt Infra-as-Code: https://terokarvinen.com/2024/hello-sal
 
 ## Tehtävät
 Suoritan tehtävät tietokoneellani Ubuntu serverissä.
-### Kaksi virtuaalikonetta samassa verkossa
+
+### a) Kaksi virtuaalikonetta samassa verkossa
+
+Käytän ohjeenani tekstiä: Karvinen 2021: Two Machine Virtual Network With Debian 11 Bullseye and Vagrant
+
 Ensimmäisenä asennan vagrantin ja virtualboxin
 
-![Kuva1](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/0927cd92-a601-45b0-afbf-cdfd3c1672a4)
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/2292bde6-d9c8-4b6a-8485-833e5ada12c0)
 
-![Kuva2](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/33a21ffe-c38c-4ba0-bd33-9b4431abe096)
+Sitten luon hakemiston johon luon Vagrantfile tiedoston ohjeiden mukaan
 
-![Kuva3](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/c602a8bf-c37f-4b8d-b333-aceebd9cf80e)
+    mkdir twohost/; cd twohost/
+    nano Vagrantfile
+Kopioin skriptin Vagrantfile tiedoston sisälle ja pääsen käynnistämään ympäristön komennolla 
 
-Sitten luon uuden hakemiston ja lisään sinne Vagrantfile tiedoston, joka luo kaksi virtuaalikonetta.
+    vagrant up
 
-![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/6ec7001c-a648-4104-9b87-fdb65af8f15b)
+Tässä vaiheessa tulee oletettu virhe viesti IP osoitteista.
 
-Tässä vaiheessa vaihdan käyttämään ssh yhteyttä PuTTY:llä saadakseni sisällön helpommin kopioitua tiedostoon.
+  ![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/0c8c412c-948d-4368-810e-0ef8c01d37f6)
 
-![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/4d7c87e3-264a-4fc2-a7a5-9a289750a1f7)
+Korjaan tämän vaihtamalla t001 ja t002 koneen ip osoitteet osoitetun avaruuden sisälle.
 
-Käynnistäessä virtuaalikonetta t001 sain odotetun IP error viestin.
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/41d7ff03-1cd9-46e0-91b3-f63e6aa1bea8)
 
-![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/cdd666d1-b410-4e64-88eb-6c65e0dd1cc6)
+Nyt yrittäessä käynnistystä uudestaan se onnistuu ja voin ottaa ssh yhteyden jompaankumpaan koneista ja yrittää pingaamista.
 
-Korjaan tämän ongelman vaihtamalla virtuaalikoneiden ip osoitteet oikean osoiteavaruuden sisälle.
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/57769bb4-36fb-4ea8-ada5-d01c20ae0622)
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/22687f2f-4b99-4f62-8cd9-1e1d2e8ee977)
+
+Pingaaminen onnistui.
+
+### b) Herra-orja arkkitehtuuri
+
+en saa toimimaan.
 
 
 
