@@ -89,6 +89,40 @@ Karvinen 2014: Hello Salt Infra-as-Code: https://terokarvinen.com/2024/hello-sal
 
         master$ sudo salt-key -A
 
+- Kokeile salt komentoa masterissa.
+
+  		sudo salt '*' cmd.run 'whoami'
+
+### Hello Salt Infra-as-Code
+
+- Lataa salt ja micro editori
+
+		sudo apt-get update
+  		sudo apt-get -y install salt-minion
+
+		sudo apt-get -y install micro
+  		export EDITOR=micro
+
+- Tee hakemisto "hello" moduulille.  /srv/salt/ hakemisto jaetaan kaikille orjille
+
+		sudo mkdir -p /srv/salt/hello/
+		cd /srv/salt/hello/
+
+- Varmista että olet hakemistossa "/srv/salt/hello/" ja aja komento
+
+		sudoedit init.sls
+  
+- Avautuvassa micro editorissa voi kirjoittaa idempotenttia koodia saltin omalla kielellä.
+
+#### Tärkeät tilafunktiot
+
+- pkg
+- file
+- service
+- user
+- cmd (Vain jos muita ei voi käyttää.)
+
+
 ## Tehtävät
 Suoritan tehtävät tietokoneellani Ubuntu serverissä.
 
@@ -129,6 +163,13 @@ Pingaaminen onnistui.
 en saa toimimaan.
 
 
+## Lähteet
+
+Karvinen 2021: Two Machine Virtual Network With Debian 11 Bullseye and Vagrant. Luettavissa: https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/ Luettu: 10.4.2024
+
+Karvinen 2018: Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux. Luettavissa: https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux Luettu: 10.4.2024
+
+Karvinen 2014: Hello Salt Infra-as-Code. Luettavissa: https://terokarvinen.com/2024/hello-salt-infra-as-code/ Luettu: 10.4.2024
 
 
 
