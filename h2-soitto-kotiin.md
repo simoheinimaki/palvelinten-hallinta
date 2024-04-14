@@ -9,8 +9,8 @@ Karvinen 2018: Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux: 
 Karvinen 2014: Hello Salt Infra-as-Code: https://terokarvinen.com/2024/hello-salt-infra-as-code/
 
 ## Tehtävät
-Suoritan tehtävät tietokonellani Ubuntu serverissä.
-### Vagrant asennus
+Suoritan tehtävät tietokoneellani Ubuntu serverissä.
+### Kaksi virtuaalikonetta samassa verkossa
 Ensimmäisenä asennan vagrantin ja virtualboxin
 
 ![Kuva1](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/0927cd92-a601-45b0-afbf-cdfd3c1672a4)
