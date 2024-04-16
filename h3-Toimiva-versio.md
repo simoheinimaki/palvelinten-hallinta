@@ -8,7 +8,7 @@
 - Suurin osa toiminnoista, kuten projektihistorian tarkastelu, käyttävät vain paikallisia resursseja.
 - Suurelta osin Git toimii ilman verkkoyhteyttä.
 - Tiedostoja ei voi poistaa tai korruptoida ilman, että Git tietäisi niistä.
-- Kolme pää tilaa: modified, staged ja committed.
+- Kolme päätilaa: modified, staged ja committed.
 
 ### git add . && git commit; git pull && git push.
 
