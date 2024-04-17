@@ -16,7 +16,7 @@
 - "&&" Suorittaa seuraavan komennon jos aikaisempi onnistui.
 - "git commit" Tallentaa repositorion
 - ";" Mahdollistaa monen komennon ajon peräkkäin
-- "git pull" Hakee muiden tekemät muutokset ja päivittää reposition.
+- "git pull" Hakee muiden tekemät muutokset ja päivittää repositorion.
 - "git push" Päivittää ulkoisen repositorion
 
 #### Lähteet
