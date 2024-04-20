@@ -34,6 +34,29 @@ Uusi varasto
 
 ![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/b9203114-9169-4f29-845e-0321d7b16e46)
 
+### b) Dolly
+
+Tein uuden varaston Git Hubissa ja kloonasin sen 
+
+    git clone https://github.com/simoheinimaki/repo-summer
+
+Loin varastoon uuden tekstitiedoston gitissä nanolla 
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/c478f724-acc0-4bd3-b00f-8791b6a82fcf)
+
+Sitten tallennan muutokset varastoon.
+
+    git add . && git commit; git pull && git push
+
+Lisään commit messagen
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/0c34c493-ef5f-41af-be4d-fd6c2c4bed98)
+
+
+
+
+
+
 
 
 
