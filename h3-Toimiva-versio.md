@@ -28,6 +28,13 @@ Git Guides. Luetavissa: https://github.com/git-guides/git-push . Luettu 15.4.
 
 ## Tehtävät
 
+### a) Online
+
+Uusi varasto
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/b9203114-9169-4f29-845e-0321d7b16e46)
+
+
 
 
 ###
