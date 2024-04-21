@@ -58,10 +58,37 @@ Nyt uusi tiedosto näkyy Git Hubissa
 
 ![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/c5e782d5-b5a9-47c4-977d-e8c0ef19a9b4)
 
+### c) Doh!
+
+Tein kirjoitusvirheen Testi.txt tiedostossa ja tallensin.
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/8d20abcd-3795-4e10-afa6-d83963668ec4)
+
+Lisäsin muutokset seuraavaan tallennukseen ja tuhosin ne
+
+        git add .
+        git reset --hard
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/05a6c5e5-fcc5-4f51-bd5f-8b093463bbeb)
+
+Muutokset tuhoutui
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/fbc0b641-dd96-4c89-8f02-0c5de57fc13d)
+
+d) Tukki
+
+        git log
+
+Varaston lokissa näkyy aikaisemmat commitit.
+
+Nimeni ja sähköpostiosoitteeni näkyy kuten pitää.
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/bb6c747c-e359-402a-883e-8b024d9d4235)
 
 
 
 
+       
 
 
 
