@@ -75,7 +75,7 @@ Muutokset tuhoutui
 
 ![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/fbc0b641-dd96-4c89-8f02-0c5de57fc13d)
 
-d) Tukki
+d) ### Tukki
 
         git log
 
