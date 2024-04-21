@@ -52,6 +52,14 @@ Lisään commit messagen
 
 ![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/0c34c493-ef5f-41af-be4d-fd6c2c4bed98)
 
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/f8630560-455e-4e3d-95d6-de299784986a)
+
+Nyt uusi tiedosto näkyy Git Hubissa
+
+![kuva](https://github.com/simoheinimaki/palvelinten-hallinta/assets/165195779/c5e782d5-b5a9-47c4-977d-e8c0ef19a9b4)
+
+
+
 
 
 
